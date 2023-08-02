@@ -1,0 +1,62 @@
+{
+  "guestUser": {
+    "firstName": "fad",
+    "lastName": "guest",
+    "email": "fadguest@gmail.com"
+  },
+  "menuName": "Dog",
+  "productName": {
+    "DTC": ["Grain Free Original Large Breed Adult Dog Food"],
+    "BOPIS": [
+      "Wholesome Grains Lamb & Brown Rice Recipe Small Bite Adult Dog Food"
+    ],
+    "SDD": [
+      "Wholesome Grains Healthy Weight With Salmon Small Bite Adult Dry Dog Food"
+    ]
+  },
+  "productSKU": {
+    "DTC": ["6229598"],
+    "BOPIS": ["7819802216"],
+    "SDD": ["763488434"]
+  },
+  "address1": "7801 Colony Cir S",
+  "state": "Florida",
+  "city": "Tamarac",
+  "zip": "33321-3996",
+  "phone": "2064512559",
+  "cardNumber": "4242424242424242",
+  "expiryMonth": "02",
+  "expiryYear": "2025",
+  "scurityCode": "555",
+  "existingAddress": "Tamarac-1 - fad new1 7801 Colony Cir S Tamarac, FL 33321-3996",
+
+  "RegisteredUser": {
+    "firstName": "fad",
+    "lastName": "new",
+    "email": "youremail@gmail.com",
+    "password": "yourpwd",
+    "CVV": "123"
+  },
+  "ZIPMobileNumber": "2087444184",
+  "ZIPMsgSrvc": "https://www.receivesms.co/us-phone-number/3716/",
+  "PayPal": {
+    "email": "youremail@gmail.com",
+    "password": "yourpwd!"
+  },
+  "StoreLocator": {
+    "zip": "33065",
+    "store": "113"
+  },
+
+  "PickupPerson": {
+    "fName": "fad",
+    "lName": "new12",
+    "phone": "9632147850"
+  },
+  "AlterPickupPerson": {
+    "fName": "shaz",
+    "lName": "gis",
+    "phone": "9632147850"
+  },
+  "Tip": "20%"
+}

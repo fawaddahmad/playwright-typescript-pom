@@ -1,0 +1,33 @@
+{
+  "name": "petstore-pom",
+  "version": "1.0.0",
+  "description": "Playwright TypeScript Framework with Playwright Test Runner for Petstore",
+  "scripts": {
+    "env:test": "cross-env test_env=test npx playwright test --project=chromium",
+    "env:prod": "cross-env test_env=prod npx playwright test --project=chromium",
+    "env:dev": "cross-env test_env=dev npx playwright test --project=chromium",
+    "env:testpaypal": "cross-env test_env=test npx playwright test --grep @PayPal --project=chromium",
+    "env:testzip": "cross-env test_env=test npx playwright test --grep @ZIP --project=chromium",
+    "env:testbopis": "cross-env test_env=test npx playwright test --grep @BOPIS --project=chromium",
+    "env:test_guestorder": "cross-env test_env=test npx playwright test --grep @Guest --project=chromium",
+    "env:testcc": "cross-env test_env=test npx playwright test --grep @Credit --project=chromium",
+    "report-g": "allure generate allure-results -o allure-report --clean",
+    "report-o": "allure open allure-report"
+  },
+  "keywords": [
+    "playwright test runner",
+    "playwright typescript framework"
+  ],
+  "author": "Fawad Ahmad",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.31",
+    "allure-playwright": "^2.0.0-beta.26",
+    "cross-env": "^7.0.3",
+    "allure-commandline": "2.21.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "otpauth": "^9.0.2"
+  }
+}

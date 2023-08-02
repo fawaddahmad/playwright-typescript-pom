@@ -1,0 +1,55 @@
+image: mcr.microsoft.com/playwright:v1.31.0-focal
+
+pipelines:
+
+  branches:
+    '{feature/CreditCardOrders-testrun}':
+      - step:
+          name: Place Credit Card Orders on Staging
+          script:
+            - npm ci
+            - npm run env:testcc
+          artifacts:
+            - playwright-report/**
+            - allure-results/**
+      - step:
+          name: Generate Allure Report
+          image: frankescobar/allure-docker-service
+          script:
+            - allure generate allure-results -o allure-report --clean
+          artifacts:
+            - allure-report/**
+
+    '{feature/PayPalOrders-testrun}':
+      - step:
+          name: Place PayPal Orders on Staging
+          script:
+            - npm ci
+            - npm run env:testpaypal
+          artifacts:
+            - playwright-report/**
+            - allure-results/**
+      - step:
+          name: Generate Allure Report
+          image: frankescobar/allure-docker-service
+          script:
+            - allure generate allure-results -o allure-report --clean
+          artifacts:
+            - allure-report/**
+
+    '{feature/ZIPOrders-testrun}':
+      - step:
+          name: Place ZIP Orders on Staging
+          script:
+            - npm ci
+            - npm run env:testzip
+          artifacts:
+            - playwright-report/**
+            - allure-results/**
+      - step:
+          name: Generate Allure Report
+          image: frankescobar/allure-docker-service
+          script:
+            - allure generate allure-results -o allure-report --clean
+          artifacts:
+            - allure-report/**
